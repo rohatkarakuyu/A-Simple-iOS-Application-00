@@ -5,7 +5,6 @@
 //  Created by Rohat Karakuyu on 2019-09-06.
 //  Copyright © 2019 Rohat Karakuyu. All rights reserved.
 //
-
 import UIKit
 class ViewController: UIViewController {
     @IBOutlet var questionLabel: UILabel!
@@ -21,7 +20,6 @@ class ViewController: UIViewController {
         "Grapes"
     ]
     var currentQuestionIndex: Int = 0
-    
     @IBAction func showNextQuestion(_ sender: UIButton) {
         currentQuestionIndex += 1
         if currentQuestionIndex == questions.count {
@@ -39,5 +37,4 @@ class ViewController: UIViewController {
         super.viewDidLoad ()
         questionLabel.text = questions [currentQuestionIndex]
     }
-    
 }
